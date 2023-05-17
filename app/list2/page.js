@@ -1,7 +1,7 @@
 import {connectDB} from "@/util/database";
 import ListItem from "@/app/list/ListItem";
 
-export const dynamic = 'force-dynamic'
+export const revaildate = 20
 
 export default async function List() {
 
