@@ -1,4 +1,9 @@
+import {getServerSession} from "next-auth";
+
 export default function Write() {
+
+    // if (유저 세션 체크)
+
     return (
         <div className="p-20">
             <h4>글작성</h4>
