@@ -9,7 +9,7 @@ export default async function handler(request, response) {
             title : request.body.title,
             content : request.body.content
         }
-        const db = (await connectDB).db("forum")
+        const db = (await connectDB).db('forum')
         let result = await db.collection('post').updateOne(
             {_id: new ObjectId(request.body._id)},
             {$set : editContent}
